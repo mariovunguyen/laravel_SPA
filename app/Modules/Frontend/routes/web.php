@@ -27,5 +27,8 @@ Route::group(
     Route::get('/register',['as' => 'registerUser','uses' => 'Auth\RegisterController@showRegistrationForm']);
     Route::post('/register',['as' => 'registerUser','uses' => 'Auth\RegisterController@register']);
     Route::post('logout',['as' => 'logoutUser','uses' => 'Auth\LoginController@logout']);
+    //login with facebook
+    Route::get('/redirect/{social}',['as' => 'redirect.social','uses' => 'Auth\SocialAuthController@redirect']);
+    Route::get('/callback/{social}',['as' => 'callback.social','uses' => 'Auth\SocialAuthController@callback']);
     }
 );
