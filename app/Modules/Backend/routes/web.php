@@ -12,7 +12,7 @@
 */
 
 Auth::routes();
-Route::get('/welcome', function(){
+Route::get('/home', function(){
     echo "Welcome Quiz Admin";
 });
 
@@ -20,7 +20,6 @@ Route::group(
     [   'middleware' => ['web'],
         'namespace'=>'Controllers',
     ], function(){
-
     Route::get('/dash_board', ['as' => 'admin.dash_board','uses' => 'HomeController@index']);
     Route::get('login',['as' => 'login','uses' => 'Auth\LoginController@showLoginForm']);
     Route::post('login',['as' => 'login','uses' => 'Auth\LoginController@login']);
