@@ -1,0 +1,9 @@
+User___:
+	Login, register, forgot, reset, sendmail, change password, review.
+Admin__:BE:
+	Dash board:
+	management:
+	security__:
+	Api_______:Google, Facebook,   
+	:FE:
+	Vue js;
