@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="form-group row mb-0">
-                <a class="btn btn-link" href="{{ route('password.request') }}">
+                <a class="btn btn-link" href="{{ route('backend.password.request') }}">
                     {{ __('Forgot Your Password?') }}
                 </a>
             </div>
