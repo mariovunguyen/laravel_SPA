@@ -304,7 +304,7 @@
     <!-- ChartJS -->
     <script src="/css/bower_components/chart.js/Chart.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="/js/pages/dashboard2.js"></script>
+    {{--<script src="/js/pages/dashboard2.js"></script>--}}
     <!-- AdminLTE for demo purposes -->
     <script src="/js/demo.js"></script>
     </body>
