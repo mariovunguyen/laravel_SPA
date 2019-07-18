@@ -37,7 +37,7 @@
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="{{ route('backend.login') }}">
             @csrf
             <div class="form-group has-feedback">
                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="Email">

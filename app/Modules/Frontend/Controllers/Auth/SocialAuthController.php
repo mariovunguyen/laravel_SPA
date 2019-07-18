@@ -5,7 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Modules\Frontend\Services\SocialAccountService;
 use Illuminate\Support\Facades\Log;
-use Socialite;
+use Laravel\Socialite\Facades\Socialite;
 use App\User;
 use App\Modules\Frontend\Controllers\Controller;
 class SocialAuthController extends Controller

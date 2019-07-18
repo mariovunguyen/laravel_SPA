@@ -37,7 +37,7 @@
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form method="POST" action="{{ route('loginUser') }}">
+            <form method="POST" action="{{ route('frontend.login') }}">
                 @csrf
                 <div class="form-group has-feedback">
                     <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus placeholder="Email">
@@ -91,7 +91,7 @@
                     Google+</a>
             </div>
             <!-- /.social-auth-links -->
-            <a href="{{route('registerUser') }}" class="text-center">Register a new membership</a>
+            <a href="{{route('frontend.register') }}" class="text-center">Register a new membership</a>
 
         </div>
         <!-- /.login-box-body -->

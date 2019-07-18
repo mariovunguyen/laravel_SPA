@@ -257,7 +257,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Profile</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="{{ route('logout') }}" class="btn btn-default btn-flat"
+                                        <a href="{{ route('backend.logout') }}" class="btn btn-default btn-flat"
                                             onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
@@ -280,11 +280,14 @@
             </nav>
         </header>
         <!-- Left side column. contains the logo and sidebar -->
-    @include('Backend::admin.left-site')
+        @include('Backend::admin.left-site')
 
-    <!-- Content Wrapper. Contains page content -->
+        <!-- Content Wrapper. Contains page content -->
         @yield('content')
-    <!-- ./wrapper -->
+        <!-- ./wrapper -->
+        <!-- footer -->
+        @include('Backend::admin.footer')
+
     </div>
     <!-- jQuery 3 -->
     <script src="/css/bower_components/jquery/dist/jquery.min.js"></script>

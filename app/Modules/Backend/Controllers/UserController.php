@@ -2,6 +2,7 @@
 
 namespace App\Modules\Backend\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -13,7 +14,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('Backend::user.index');
+        $data = User::orderBy('created_at','DESC')->paginate(10);
+        return view('Backend::admin.user.index', compact('data'));
     }
 
     /**

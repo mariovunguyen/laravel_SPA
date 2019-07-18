@@ -37,7 +37,7 @@
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form method="POST" action="{{ route('register') }}">
+            <form method="POST" action="{{ route('frontend.register') }}">
                 @csrf
                 
                 <div class="form-group has-feedback">
@@ -112,7 +112,7 @@
                     Google+</a>
             </div>
             <!-- /.social-auth-links -->
-            <a href="{{route('loginUser') }}" class="text-center">I already have a membership</a>
+            <a href="{{route('frontend.login') }}" class="text-center">I already have a membership</a>
 
         </div>
         <!-- /.login-box-body -->

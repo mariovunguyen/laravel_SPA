@@ -7,6 +7,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Notifications\ResetPasswordNotification;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * @method static orderBy(string $string, string $string1)
+ */
 class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;

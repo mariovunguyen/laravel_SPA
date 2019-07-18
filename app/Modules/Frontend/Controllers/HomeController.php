@@ -2,6 +2,7 @@
 
 namespace App\Modules\Frontend\Controllers;
 
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
